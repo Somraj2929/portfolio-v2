@@ -21,7 +21,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
@@ -61,7 +61,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 text-zinc-600 flex flex-col items-center gap-1 md:gap-2"
+        className="absolute bottom-0 md:bottom-0 left-1/2 -translate-x-1/2 text-zinc-600 flex flex-col items-center gap-1 md:gap-2"
       >
         <span className="text-[9px] md:text-[10px] uppercase tracking-widest font-semibold">Scroll</span>
         <motion.div
