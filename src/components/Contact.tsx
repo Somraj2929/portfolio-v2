@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import portfolioData from "@/data/portfolioContent.json";
+import { usePortfolio } from "@/context/PortfolioContext";
 import { Mail, Download } from "lucide-react";
 
 export default function Contact() {
+  const portfolioData = usePortfolio();
   const { email, linkedin, resumeLink } = portfolioData.contact;
 
   return (

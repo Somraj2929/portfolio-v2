@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import portfolioData from "@/data/portfolioContent.json";
+import { usePortfolio } from "@/context/PortfolioContext";
 
 export default function About() {
+  const portfolioData = usePortfolio();
   const { intro, philosophy, strengths } = portfolioData.about;
 
   return (

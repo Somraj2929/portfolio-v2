@@ -1,6 +1,8 @@
-import portfolioData from "@/data/portfolioContent.json";
+"use client";
+import { usePortfolio } from "@/context/PortfolioContext";
 
 export default function Footer() {
+  const portfolioData = usePortfolio();
   const currentYear = new Date().getFullYear();
   
   return (

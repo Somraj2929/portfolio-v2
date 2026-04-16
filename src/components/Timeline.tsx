@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import portfolioData from "@/data/portfolioContent.json";
+import { usePortfolio } from "@/context/PortfolioContext";
 import { Briefcase } from "lucide-react";
 
 export default function Timeline() {
+  const portfolioData = usePortfolio();
   const { experience } = portfolioData;
 
   return (

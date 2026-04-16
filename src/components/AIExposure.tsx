@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import portfolioData from "@/data/portfolioContent.json";
+import { usePortfolio } from "@/context/PortfolioContext";
 import { Workflow, LineChart, LayoutDashboard } from "lucide-react";
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -11,6 +11,7 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 export default function AIExposure() {
+  const portfolioData = usePortfolio();
   const { title, description, useCases } = portfolioData.aiExposure;
 
   return (

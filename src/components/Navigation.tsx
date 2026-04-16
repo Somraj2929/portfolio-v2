@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import portfolioData from "@/data/portfolioContent.json";
+import { usePortfolio } from "@/context/PortfolioContext";
 
 const navItems = [
   { name: "About", href: "#about" },
@@ -14,6 +14,7 @@ const navItems = [
 ];
 
 export default function Navigation() {
+  const portfolioData = usePortfolio();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 

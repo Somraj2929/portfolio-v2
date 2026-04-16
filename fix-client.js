@@ -1,0 +1,22 @@
+const fs = require('fs');
+const files = [
+  'src/components/Skills.tsx',
+  'src/components/Timeline.tsx',
+  'src/components/Services.tsx',
+  'src/components/Projects.tsx',
+  'src/components/Navigation.tsx',
+  'src/components/Hero.tsx',
+  'src/components/Footer.tsx',
+  'src/components/Contact.tsx',
+  'src/components/About.tsx',
+  'src/components/AIExposure.tsx'
+];
+
+files.forEach(f => {
+  let content = fs.readFileSync(f, 'utf8');
+  if (!content.includes('"use client"') && !content.includes("'use client'")) {
+    fs.writeFileSync(f, '"use client";\n' + content);
+    console.log('Added use client to ' + f);
+  }
+});
+console.log('Done');

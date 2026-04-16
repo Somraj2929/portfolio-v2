@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import portfolioData from "@/data/portfolioContent.json";
+import { usePortfolio } from "@/context/PortfolioContext";
 
 export default function Services() {
+  const portfolioData = usePortfolio();
   const { services } = portfolioData;
 
   return (
