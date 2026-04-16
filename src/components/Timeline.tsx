@@ -35,7 +35,7 @@ export default function Timeline() {
               className="relative pl-6 md:pl-16 group"
             >
               {/* Timeline dot */}
-              <div className="absolute top-0 left-[-16px] md:left-[-20px] w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#03040b] border-2 border-blue-500/50 text-blue-400 flex items-center justify-center group-hover:border-blue-400 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-all duration-300">
+              <div className="absolute top-0 left-[-16px] md:left-[-20px] w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#060810] border-2 border-blue-500/50 text-blue-400 flex items-center justify-center group-hover:border-blue-400 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-all duration-300">
                 <Briefcase size={14} className="md:w-4 md:h-4" />
               </div>
 

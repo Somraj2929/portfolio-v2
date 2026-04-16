@@ -39,7 +39,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto px-4 sm:px-0">
             <a
               href="#projects"
-              className="w-full sm:w-auto group relative px-8 py-3.5 md:py-4 bg-white text-black font-semibold rounded-full overflow-hidden transition-transform hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(255,255,255,0.15)] hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] flex justify-center"
+              className="w-full sm:w-auto group relative px-8 py-3.5 md:py-4 bg-white/95 text-black font-semibold rounded-full overflow-hidden transition-all duration-500 hover:bg-white hover:scale-[1.02] active:scale-95 shadow-[0_4px_14px_0_rgba(255,255,255,0.15)] hover:shadow-[0_6px_24px_rgba(255,255,255,0.25)] border border-white/20 flex justify-center items-center"
             >
               <span className="relative z-10 flex items-center gap-2">
                 {ctaText}
@@ -48,7 +48,7 @@ export default function Hero() {
             </a>
             <a
               href="#contact"
-              className="w-full sm:w-auto px-8 py-3.5 md:py-4 font-semibold text-white border border-white/10 rounded-full glass hover:border-white/30 transition-colors flex justify-center"
+              className="w-full sm:w-auto px-8 py-3.5 md:py-4 font-semibold text-white border border-white/10 shadow-sm rounded-full bg-white/[0.03] backdrop-blur-md hover:bg-white/[0.08] hover:border-white/20 transition-all duration-300 flex justify-center items-center"
             >
               Let's Talk
             </a>

@@ -37,7 +37,7 @@ export default function CommandMenu() {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#03040b]/60 backdrop-blur-md p-4 animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#060810]/60 backdrop-blur-md p-4 animate-in fade-in duration-200">
       <div 
         className="w-full max-w-lg rounded-2xl border border-white/10 bg-[#060813]/90 p-4 shadow-2xl backdrop-blur-xl"
         autoFocus

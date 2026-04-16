@@ -8,7 +8,7 @@ export default function Contact() {
   const { email, linkedin, resumeLink } = portfolioData.contact;
 
   return (
-    <section id="contact" className="py-12 md:py-20 relative overflow-hidden bg-gradient-to-b from-[#03040b] to-[#010206] border-t border-white/5">
+    <section id="contact" className="py-12 md:py-20 relative overflow-hidden bg-gradient-to-b from-transparent to-black/20 border-t border-white/5">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[90vw] md:w-[80vw] h-[50vw] bg-blue-900/10 rounded-[100%] blur-[120px] pointer-events-none" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10">
         <motion.div
@@ -28,7 +28,7 @@ export default function Contact() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
             <a
               href={`mailto:${email}`}
-              className="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-3.5 md:py-4 bg-white text-black font-semibold rounded-full hover:scale-105 active:scale-95 transition-transform shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:shadow-[0_0_40px_rgba(255,255,255,0.25)]"
+              className="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-3.5 md:py-4 bg-white/95 text-black font-semibold rounded-full hover:bg-white transition-all duration-500 hover:scale-[1.02] active:scale-95 shadow-[0_4px_14px_0_rgba(255,255,255,0.15)] hover:shadow-[0_6px_24px_rgba(255,255,255,0.25)] border border-white/20"
             >
               <Mail size={18} />
               Say Hello
