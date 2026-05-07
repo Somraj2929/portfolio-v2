@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Geist } from "next/font/google";
 import "./globals.css";
 import MouseGlow from "@/components/MouseGlow";
 import CommandMenu from "@/components/CommandMenu";
+import SplashCursor from "@/components/SplashCursor";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,12 +37,24 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} dark antialiased`}
+      className={cn("dark", "antialiased", inter.variable, "font-sans", geist.variable)}
     >
       <body className="min-h-screen bg-[#060810] text-white selection:bg-blue-500/30 selection:text-blue-200">
         
         <MouseGlow />
         <CommandMenu />
+        <SplashCursor
+          DENSITY_DISSIPATION={3.5}
+          VELOCITY_DISSIPATION={2}
+          PRESSURE={0.1}
+          CURL={3}
+          SPLAT_RADIUS={0.2}
+          SPLAT_FORCE={6000}
+          COLOR_UPDATE_SPEED={10}
+          SHADING
+          RAINBOW_MODE={false}
+          COLOR="#A855F7"
+        />
 
         {/* Global Premium Background with Texture and Gradient */}
         <div className="fixed inset-0 z-[[-1]] pointer-events-none">
